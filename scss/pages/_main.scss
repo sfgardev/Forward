@@ -1,0 +1,36 @@
+.section-newbies {
+  background-color: $color-light-grey;
+  padding: 70px 0;
+}
+
+.section-traders {
+  background-color: $color-light-grey;
+  background-image: url(../img/info-box/traders-bg.jpg);
+  background-repeat: no-repeat;
+  min-height: 1138px;
+  position: relative;
+}
+
+.section-investors {
+  background-image: url(../img/info-box/investors-bg.jpg);
+  min-height: 1140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-reviews {
+  padding: 80px 0;
+  background-image: url(../../img/reviews/reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-timetable {
+  padding: 78px 0 330px;
+}
+
+.section-contacts {
+  position: relative;
+}

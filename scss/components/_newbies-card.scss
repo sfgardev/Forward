@@ -1,0 +1,83 @@
+.newbies-box {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newbies-card {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  flex: 0 0 370px;
+  padding-bottom: 36px;
+  position: relative;
+  transition: transform .3s;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 0 0;
+    border-color: $color-red transparent transparent transparent;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    margin-bottom: 46px;
+  }
+
+  &__ico {
+    margin-bottom: 45px;
+  }
+
+  &__text-box {
+    padding-left: 50px;
+    padding-right: 65px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    color: $color-black;
+    margin-bottom: 27px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 2px;
+      background-color: $color-red;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__btn {
+    min-width: 270px;
+    background-color: transparent;
+    color: $color-grey;
+    border: 1px solid $color-red;
+    box-shadow: 0px 5px 10px rgba(225, 83, 83, 0.15);
+    font-size: 16px;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $color-red;
+      color: #fff;
+    }
+  }
+
+}

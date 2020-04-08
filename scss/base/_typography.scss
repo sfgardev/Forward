@@ -1,0 +1,13 @@
+.heading-secondary {
+  font-size: 40px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid $color-red;
+
+  &--reviews {
+    color: #fff;
+    margin-bottom: 80px;
+  }
+}

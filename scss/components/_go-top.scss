@@ -1,0 +1,25 @@
+.go-top {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $color-black;
+  position: fixed;
+  right: 38px;
+  bottom: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: all .3s;
+
+
+  &:hover {
+    background-color: $color-red;
+    bottom: 10px;
+  }
+
+  &__chevron > * {
+    fill: #fff;
+  }
+}
+

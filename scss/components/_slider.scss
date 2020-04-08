@@ -1,0 +1,101 @@
+.slider {
+  
+  &__item {
+    display: flex;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    padding-top: 10px;
+    margin-bottom: 54px;
+  }
+
+  &__img {
+
+  }
+
+  &__info {
+    padding: 100px 70px 80px 80px;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  &__ico {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+
+  .slick-arrow {
+    font-size: 0;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    background-color: transparent;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background .3s;
+    z-index: 100;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+  }
+
+  .slick-prev {
+    left: -106px;
+    background-image: url(../img/chevron-left.svg);
+  }
+
+  .slick-next {
+    right:-106px;
+    background-image: url(../img/chevron-right.svg);
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    right: 0;
+
+    li {
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      button {
+        font-size: 0;
+        width: 6px;
+        height: 6px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+      }
+    }
+    
+    .slick-active button{
+      background-color: #fff;
+    }
+  }
+}

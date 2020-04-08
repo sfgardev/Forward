@@ -1,0 +1,107 @@
+.timetable {
+  margin-top: 78px;
+  padding-bottom: 78px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255,255,255,.75);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    height: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &::before {
+    width: 1140px;
+    bottom: -10px;
+  }
+
+  &::after {
+    width:1110px;
+    bottom: -20px;
+  }
+
+  &__heading {
+    background-color: $color-red;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 70px;
+  }
+
+  &__events {
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-left: 70px;
+
+    &:nth-child(odd) {
+      background-color: $color-light-grey;
+    }
+  }
+
+  &__event {
+    flex: 1 1 50%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    padding: 38px 0 33px;
+  }
+
+  &__date {
+    font-size: 16px;
+    padding-right: 35px;
+    border-right: 2px solid rgba(153, 153, 153, 0.35);
+    margin-right: 38px;
+  }
+
+  &__num {
+    color: $color-red;
+    font-size: 36px;
+  }
+
+  &__name {
+    
+  }
+
+  &__suptitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    color: $color-black;
+  }
+
+  &__bot {
+    text-align: center;
+    padding-top: 70px;
+    border-top: 1px solid rgba(153, 153, 153, 0.35);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+.timetable-box {
+  flex: 1 1 50%;
+  display: flex;
+  color: #fff;
+
+  &__date {
+    margin-right: 86px;
+  }
+
+}

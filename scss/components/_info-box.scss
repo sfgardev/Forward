@@ -1,0 +1,52 @@
+.info-box {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  max-width: 1146px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 75px 0 75px 200px;
+
+  &--investors {
+    height: 935px;
+    left: 0;
+    top: 0;
+    padding-left: 470px;
+  }
+
+  &__item {
+    margin-top: 60px;
+    display: flex;
+    margin-left: -100px;
+  }
+
+  &__ico {
+    margin-right: 36px;
+  }
+
+  &__text-box {
+    max-width: 513px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 400;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+
+  }
+
+  &__buttons {
+    margin-top: 60px;
+  }
+
+  &__btn {
+    margin-right: 30px;
+  }
+
+
+}

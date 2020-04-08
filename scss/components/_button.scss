@@ -1,0 +1,43 @@
+.btn {
+  color: #fff;
+  background-color: $color-red;
+  padding: 12px 32px;
+  transition: all .3s;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-red, 15);
+  }
+
+  &:active {
+    transform: translateY(4px);
+  }
+}
+
+.btn-text {
+  font-size: 16px;
+  color: $color-blue;
+  text-decoration: underline;
+  padding: 10px 15px;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $color-red;
+    color: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 5px 5px rgba(0,0,0,.15);
+    transform: translateY(0);
+  }
+}
+
+.btn-reviews {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(225, 83, 83, 0.15);
+}
